@@ -1,0 +1,56 @@
+.notfound-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 80vh;
+    background-color: transparent;
+}
+
+.notfound-card {
+    background: white;
+    padding: 3rem 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.08);
+    text-align: center;
+    max-width: 450px;
+    width: 90%;
+}
+
+.notfound-code {
+    font-size: 6rem;
+    font-weight: 800;
+    color: #cc1534; /* Dark red matching the image */
+    margin: 0;
+    line-height: 1;
+}
+
+.notfound-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+.notfound-text {
+    color: #666;
+    font-size: 1rem;
+    margin-bottom: 2rem;
+    line-height: 1.5;
+}
+
+.notfound-btn {
+    background-color: #0061f2; /* Blue matching the image */
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 6px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.2s ease;
+    display: inline-block;
+}
+
+.notfound-btn:hover {
+    background-color: #004dc2;
+    color: white;
+}

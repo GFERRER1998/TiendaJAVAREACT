@@ -1,0 +1,13 @@
+/* SearchBox.css */
+.search-box-container {
+    max-width: 400px;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.2);
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.search-box-container input:focus {
+    box-shadow: none;
+    border-color: transparent;
+    background-color: #3b3b3b !important; /* Slightly lighter dark on focus */
+}

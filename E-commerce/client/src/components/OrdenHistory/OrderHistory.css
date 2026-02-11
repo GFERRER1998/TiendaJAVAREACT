@@ -1,0 +1,71 @@
+.Order-History-container {
+    padding: 20px;
+    height: calc(100vh - 5rem);
+    box-sizing: border-box;
+    background-color: #1a1d1e;
+    overflow-y: auto;
+    overflow-x: hidden;
+    color: #e9ecef;
+}
+
+/* Custom Scrollbar for a premium look */
+.Order-History-container::-webkit-scrollbar {
+    width: 8px;
+}
+
+.Order-History-container::-webkit-scrollbar-track {
+    background: #1a1d1e;
+}
+
+.Order-History-container::-webkit-scrollbar-thumb {
+    background: #4a4d4e;
+    border-radius: 10px;
+}
+
+.Order-History-container::-webkit-scrollbar-thumb:hover {
+    background: #5a5d5e;
+}
+
+.Order-History-container h2 {
+    color: #ffffff;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+}
+
+.table {
+    margin-top: 20px;
+    background-color: #2c3335 !important;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.table th {
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 0.85rem;
+    letter-spacing: 0.5px;
+    background-color: #212529 !important;
+    color: #adb5bd !important;
+}
+
+.table td {
+    vertical-align: middle;
+    color: #dee2e6;
+    border-color: #3d4244;
+}
+
+.badge {
+    font-size: 0.75rem;
+    padding: 6px 10px;
+    font-weight: 600;
+    border-radius: 6px;
+}
+
+@media (max-width: 768px) {
+    .table-responsive {
+        overflow-x: auto;
+    }
+    .table td, .table th {
+        white-space: nowrap;
+    }
+}

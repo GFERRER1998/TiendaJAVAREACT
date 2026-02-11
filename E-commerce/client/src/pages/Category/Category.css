@@ -1,0 +1,39 @@
+.category-hover:hover {
+    transform: translateY(-5px);
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+
+}
+
+.active-category {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    background-color: #fff;
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    z-index: 10; /* Ensure it's on top */
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+/* Optional: Show a faint ring on hover to indicate clickable */
+.category-hover:hover::before {
+    content: '';
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    pointer-events: none;
+}
+
+.category-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 10%;
+    border: 3px solid white;
+}
