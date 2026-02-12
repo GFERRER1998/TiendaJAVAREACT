@@ -6,13 +6,13 @@ const getAuthHeaders = () => {
 };
 
 export const addCategory = async (category) => {
- return await axios.post("http://localhost:8080/api/admin/categories", category, getAuthHeaders())
+ return await axios.post("http://35.193.146.253:8080/api/admin/categories", category, getAuthHeaders())
 }
 
 export const deleteCategory = async (categoryID) => {
- return await axios.delete(`http://localhost:8080/api/admin/categories/${categoryID}`, getAuthHeaders())
+ return await axios.delete(`http://35.193.146.253:8080/api/admin/categories/${categoryID}`, getAuthHeaders())
 }
 
 export const fetchCategories = async () => {
- return await axios.get("http://localhost:8080/api/categories", getAuthHeaders())
+ return await axios.get("http://35.193.146.253:8080/api/categories", getAuthHeaders())
 }

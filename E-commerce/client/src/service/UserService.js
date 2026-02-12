@@ -6,13 +6,13 @@ const getAuthHeaders = () => {
 };
 
 export const addUser = async (user) => {
-    return await axios.post("http://localhost:8080/api/admin/users", user, getAuthHeaders())
+    return await axios.post("http://35.193.146.253:8080/api/admin/users", user, getAuthHeaders())
 }
 
 export const deleteUser = async (userID) => {
-    return await axios.delete(`http://localhost:8080/api/admin/users/${userID}`, getAuthHeaders())
+    return await axios.delete(`http://35.193.146.253:8080/api/admin/users/${userID}`, getAuthHeaders())
 }
 
 export const fetchUsers = async () => {
-    return await axios.get("http://localhost:8080/api/admin/users", getAuthHeaders())
+    return await axios.get("http://35.193.146.253:8080/api/admin/users", getAuthHeaders())
 }
